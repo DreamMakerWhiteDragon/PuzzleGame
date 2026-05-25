@@ -3,19 +3,69 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>终卷：残卷归一</title>
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <title>终卷：贪狼将临</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=4" />
+  <style>
+    .boss-video-card {
+      margin-top: 22px;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(8, 5, 12, 0.58);
+      border: 1px solid rgba(246, 210, 122, 0.22);
+      box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.48);
+    }
+
+    .boss-video {
+      display: block;
+      width: 100%;
+      max-height: 560px;
+      border-radius: 14px;
+      background: #050309;
+      border: 1px solid rgba(246, 210, 122, 0.20);
+      outline: none;
+    }
+
+    .spoiler-mark {
+      display: inline-block;
+      margin: 8px 0 2px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: #1b101f;
+      background: linear-gradient(180deg, #f6d27a, #b98a3b);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    .boss-name {
+      color: #f6d27a;
+      letter-spacing: 0.08em;
+    }
+  </style>
 </head>
 <body>
   <main class="page">
-    <span class="badge">终卷 · 通关</span>
+    <span class="badge">终卷 · 剧透影像</span>
     <h1 class="success">残卷已归一</h1>
-    <p>无字卷首，八影归位，黑雾散尽，技能回响，密文破封。试玩版的最后一页已经展开。</p>
+    <p>无字卷首，八影归位，黑雾散尽，法宝回响，密文破封。天书最后一页终于展开。</p>
 
     <div class="scroll-box">
       <h2>天书合卷</h2>
-      <p>这里就是 <span class="url-hint">/password=4163725/</span> 对应的通关页。</p>
-      <p>你可以在这里放活动结束文案、兑换码、抽奖提示，或者正式版预约入口。</p>
+      <p>封印尽破后，卷中浮现的不是经文，而是一段尚未公开的影像。</p>
+
+      <div class="boss-video-card">
+        <span class="spoiler-mark">BOSS 剧透</span>
+        <h2 class="boss-name">贪狼星君 · 将临</h2>
+        <p>星芒坠入战场，狼影自黑夜中抬首。请观看终卷影像。</p>
+
+        <video class="boss-video" controls preload="metadata" poster="../assets/img/tanlang-poster.png">
+          <source src="../assets/video/tanlang-spoiler.mp4" type="video/mp4" />
+          你的浏览器不支持视频播放。请确认视频文件已放入 docs/assets/video/tanlang-spoiler.mp4。
+        </video>
+
+      </div>
+
+
     </div>
 
   </main>
