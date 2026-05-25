@@ -1,17 +1,16 @@
 :root {
   --bg: #120b18;
-  --card: rgba(29, 19, 39, 0.84);
-  --card-2: rgba(45, 31, 60, 0.72);
+  --card: rgba(29, 19, 39, 0.86);
+  --card-2: rgba(45, 31, 60, 0.74);
   --gold: #f6d27a;
   --gold-2: #b98a3b;
-  --text: #f6eddf;
-  --muted: #bdaecb;
+  --text: #f7efe3;
+  --muted: #c4b5d2;
   --danger: #e68a73;
+  --success: #a8e6ba;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -19,9 +18,9 @@ body {
   color: var(--text);
   font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
   background:
-    radial-gradient(circle at 20% 12%, rgba(246, 210, 122, 0.14), transparent 28%),
-    radial-gradient(circle at 78% 20%, rgba(116, 67, 167, 0.28), transparent 30%),
-    radial-gradient(circle at 50% 90%, rgba(189, 138, 59, 0.16), transparent 32%),
+    radial-gradient(circle at 18% 12%, rgba(246, 210, 122, 0.15), transparent 26%),
+    radial-gradient(circle at 78% 18%, rgba(116, 67, 167, 0.28), transparent 32%),
+    radial-gradient(circle at 50% 92%, rgba(189, 138, 59, 0.14), transparent 34%),
     linear-gradient(135deg, #0c0710 0%, #180d22 48%, #0a0610 100%);
   display: flex;
   align-items: center;
@@ -30,11 +29,11 @@ body {
 }
 
 .page {
-  width: min(900px, 100%);
+  width: min(940px, 100%);
   border: 1px solid rgba(246, 210, 122, 0.28);
   border-radius: 26px;
-  background: linear-gradient(180deg, var(--card), rgba(17, 11, 23, 0.92));
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.46), inset 0 0 40px rgba(246, 210, 122, 0.04);
+  background: linear-gradient(180deg, var(--card), rgba(17, 11, 23, 0.94));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.48), inset 0 0 40px rgba(246, 210, 122, 0.04);
   padding: 42px;
   position: relative;
   overflow: hidden;
@@ -90,12 +89,20 @@ p {
   border: 1px solid rgba(246, 210, 122, 0.18);
 }
 
-.audio-card {
+.clue-card {
   margin-top: 20px;
   padding: 20px;
   border-radius: 18px;
   background: rgba(8, 5, 12, 0.48);
   border: 1px solid rgba(246, 210, 122, 0.20);
+}
+
+.poem {
+  color: #fff4d8;
+  font-size: clamp(18px, 2.4vw, 24px);
+  line-height: 2.05;
+  letter-spacing: 0.06em;
+  text-align: center;
 }
 
 audio {
@@ -110,6 +117,18 @@ audio {
   border: 1px solid rgba(246, 210, 122, 0.20);
   padding: 3px 8px;
   border-radius: 8px;
+}
+
+.code-block {
+  display: block;
+  word-break: break-all;
+  line-height: 1.8;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: var(--gold);
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(246, 210, 122, 0.20);
+  padding: 14px 16px;
+  border-radius: 12px;
 }
 
 .btn {
@@ -128,17 +147,23 @@ audio {
   color: #9583a5;
 }
 
-.success {
-  color: #f8d88b;
-}
+.success { color: var(--success); }
+.warning { color: var(--danger); }
 
-.warning {
-  color: var(--danger);
+.rule-list {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.9;
 }
 
 @media (max-width: 640px) {
   .page {
     padding: 28px 22px;
     border-radius: 20px;
+  }
+  .poem {
+    text-align: left;
+    letter-spacing: 0.03em;
   }
 }

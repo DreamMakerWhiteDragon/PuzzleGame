@@ -3,30 +3,36 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>第一劫：技能回响</title>
+  <title>第一劫：八影归位</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
   <main class="page">
-    <span class="badge">第一劫 · 技能回响</span>
+    <span class="badge">第一劫 · 八影归位</span>
     <h1>残卷初启</h1>
-    <p>妖雾遮住了天书上的文字，只留下一段来自战场深处的回响。</p>
+    <p>天书第一页浮出八道身影。它们没有直呼其名，只把身份藏进诗句之中。</p>
 
     <div class="scroll-box">
-      <h2>听音辨真言</h2>
-      <p>请听下方音频，找出其中隐藏的数字顺序。得到真言后，将当前网址尾缀中的 <span class="url-hint">password=?</span> 改为：</p>
-      <p><span class="url-hint">password=你得到的数字</span></p>
-
-      <div class="audio-card">
-        <p>封印音频：</p>
-        <audio controls preload="metadata">
-          <source src="../assets/audio/puzzle1.mp3" type="audio/mpeg" />
-          你的浏览器不支持音频播放。请确认音频文件已放入 assets/audio/puzzle1.mp3。
-        </audio>
+      <h2>谜面</h2>
+      <div class="clue-card poem">
+        月照灌江三眼开，狐灯一点入云来。<br>
+        白马驮经过石径，流沙抱杖立苍苔。<br>
+        金猴踏雾惊天阙，九齿分云下翠崖。<br>
+        碧海短匕掠水过，禅衣向晚渡尘埃。
       </div>
+
+      <h2>解法提示</h2>
+      <p>请按诗中角色出现顺序，代入角色编号，组成八位数封印密码。</p>
+      <ul class="rule-list">
+        <li>悟空 = 1，唐僧 = 2，小龙女 = 3，二郎神 = 4</li>
+        <li>猪八戒 = 5，沙僧 = 6，小白龙 = 7，狐狸 = 8</li>
+      </ul>
+
+      <p>得到真言后，将当前网址尾缀中的 <span class="url-hint">password=?</span> 改为：</p>
+      <p><span class="url-hint">password=你得到的八位数</span></p>
     </div>
 
-    <p class="small">提示：输错真言会迷失在妖雾中。</p>
+    <p class="small">提示：诗句顺序就是取数顺序。</p>
   </main>
 </body>
 </html>
